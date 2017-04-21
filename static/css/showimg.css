@@ -1,0 +1,12 @@
+/*左侧效果*/
+.left{
+float: left;
+width: 100px;
+height: 600px;
+}
+/*右边隐藏图片的效果*/
+.hide_img{
+    float: left;
+    width:600px;
+    height: 600px;
+}
