@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>photo-switching</title>
+    <style type="text/css">
+        #container {
+            margin: 0 auto;
+            padding: 0;
+            width: 900px;
+        }
+
+        #dot {
+            margin-left: 500px;
+        }
+
+        img {
+            width: 200px;
+            height: 400px;
+        }
+
+        .before {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 0 12px;
+            border-radius: 50%;
+            background-color: #666;
+        }
+
+        .cur {
+            width: 12px;
+            height: 12px;
+            margin-bottom: -2px;
+            border: 1px solid #666;
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <img id="1" src="img/img_3001.jpg">
+        <img id="2" src="img/img_3028.jpg">
+        <img id="3" src="img/img_2921.jpg">
+        <img id="4" src="img/img_3048.png">
+    </div>
+    <div id="dot">
+        <a class="before" id="dot1"></a>
+        <a class="before" id="dot2"></a>
+        <a class="before" id="dot3"></a>
+        <a class="before" id="dot4"></a>
+    </div>
+    <script>
+     var div=document.getElementById("dot");
+     div.addEventListener('click',function(e){
+     if(e.target.name="a"){
+        //  alert(e.target.id);
+        //alert(e.target.class);
+        e.target.class="cur";
+     }
+     });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>dom</title>
+</head>
+
+<body>
+    <div id="div1">hello</div>
+    <script>
+        var div1 = document.getElementById("div1");
+        // for (var i = 1; i < 4; i++) {
+        //     (function (j) {
+        //         setTimeout(function () {
+        //             var div2 = document.createElement("div");
+        //             var text = document.createTextNode(j);
+        //             div2.appendChild(text);
+        //             div1.appendChild(div2);
+        //             console.log(j);
+        //         }, 2000 * j);
+        //     })(i);
+         for (var i = 1; i < 4; i++) {
+            
+                    var div2 = document.createElement("div");
+                    var text = document.createTextNode(i);
+                    div2.appendChild(text);
+                    div1.appendChild(div2);
+                    console.log(i);
+         }
+            div1.addEventListener('click',function(e){
+                if(e.target.name=="div"){
+                    alert(e.target.innerText);
+                }
+                 alert(this.parentNode);
+            });
+        
+    </script>
+</body>
+
+</html>

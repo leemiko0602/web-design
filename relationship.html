@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>dom</title>
+</head>
+
+<body>
+    <ol id="ol">
+        <li id="1">1</li>
+        <li id="2">2</li>
+    </ol>
+    <script>
+        // var dom1 = document.createElement('ol');
+        // var dom2 = document.createElement("li");
+        // dom1.appendChild(dom2);
+        var dom1=document.getElementById("1");
+        var dom2=document.getElementById("2");
+        if (dom1 == dom2.parentNode) {
+            console.log(dom1.nodeName + " is father of " + dom2.nodeName);
+        }
+        else{
+            dom1=dom1.parentNode;
+        }
+        if (dom2== dom1.parentNode) {
+            console.log(dom2.nodeName + " is father of " + dom1.nodeName);
+        }
+    </script>
+</body>
+
+</html>

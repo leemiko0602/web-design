@@ -1,0 +1,20 @@
+
+ ul{
+    list-style: none;/* 去掉每个li前面的圆点*/
+    margin: 0 auto;
+    padding: 0px;
+    width: 600px; /* 当元素有宽度的时候，margin设置为0 auto整个元素就可以实现居中的效果*/
+}
+
+.dot{
+    float: left;
+    margin-left: 10px;
+}
+/*鼠标放在链接上时*/
+a:hover{
+    color: red;
+}
+
+a:visited{
+    color: blue;
+}

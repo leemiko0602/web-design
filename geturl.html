@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <meta charset="utf-8">
+    <head>
+        <title>get url</title>
+    </head>
+    <body>
+        <div id="container">
+            <a href="www.baidu.com" id="ba"> hello</a>
+            <a href="www.jd.com"> world </a>
+            <a href="www.taobao.com">!</a>
+        </div>
+        <script>
+            var ob=document.getElementById("container");
+            ob.addEventListener('click',function(e){
+             if(e.target.name="a"){
+                console.log(e.target.getAttribute('href'));
+                e.preventDefault();
+            }
+           });
+          var a=document.getElementsByTagName('a');
+          console.log(a[0]);
+        //   for(var i=0;i<a.length;i++){
+        //       a[i].addEventListener('click',function(e){
+        //           alert(e.target.getAttribute("href"));
+        //           return false;
+        //       })
+        //   }
+        
+       </script>
+    </body>
+</html>
