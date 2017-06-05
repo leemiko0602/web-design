@@ -1,3 +1,4 @@
+//移除数组 arr 中的所有值与 item 相等的元素。不要直接修改数组 arr，结果返回新的数组 
 function remove(arr, item) {
     if(item==null) return;
     if(arr.length==0)return;
